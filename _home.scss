@@ -1,0 +1,179 @@
+.home {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(images/bg-hero-desktop.svg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: hsl(193, 100%, 96%);
+    @media (max-width: 1024px) {
+        min-height: 53vh;
+    }
+    @media (max-width: 414px) {
+    background-image: url(images/bg-hero-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+    header {
+        width: 90%;
+        margin: auto;
+        min-height: 10vh;
+        padding-top: 1rem;
+        nav {
+            @include flex(row, space-around, center);
+            .logo {
+                flex: 5;
+                @media (max-width: 1024px) {
+                    flex: 3;
+                }
+                @media (max-width: 415px) {
+                    flex: 1;
+                }
+                img {
+                    width: 11%;
+                    @media (max-width: 1024px) {
+                        width: 14%;
+                    }
+                    @media (max-width: 768px) {
+                        width: 14%;
+                    }
+                    @media (max-width: 415px) {
+                        width: 64%;
+                    }
+                }
+            }
+            .btn-1 {
+                flex: 1;
+                @media (max-width: 415px) {
+                    padding-left: 111px;
+                }
+                button {
+                    padding: 15px 60px;
+                    @media (max-width: 768px) {
+                        padding: 15px 44px;
+                    }
+                    @media (max-width: 415px) {
+                        padding: 7px 30px;
+                        font-size: 10px;
+                    }
+                    @media (max-width: 376px) {
+                        padding:7px 29px;
+                    }
+                    border-radius: 28px;
+                    border: none;
+                    background-color: white;
+                    color: hsl(192, 100%, 9%);
+                    outline: none;
+                    cursor: pointer;
+                    font-weight: 700;
+                    &:hover {
+                       color: hsl(208, 11%, 55%);
+                    }
+                }
+        } 
+        }
+    }
+    .container {
+        width: 90%;
+        margin: auto;
+        padding-top: 8rem;
+        @include flex(row, space-around, center);
+        @media (max-width: 415px) {
+            @include flex(column, center, center); 
+            padding-top: 4rem;
+        }
+        .home-text {
+            flex: 1;
+            padding-bottom: 8rem;
+            padding-left: 2rem;
+            @include flex(column, center, flex-start);
+            @media (max-width: 1440px) {
+                padding-bottom: 2rem;    
+            }
+            @media (max-width: 1024px) {
+                padding-bottom: 10.5rem;
+            }
+            @media (max-width: 415px) {
+                @include flex(column, center, center);
+                text-align: center;
+                padding-bottom: 3.5rem;
+                padding-left: 0rem;
+            }
+
+            h2 {
+                font-size:2rem;
+                padding-bottom: 1.5rem;
+                @media (max-width: 1024px) {
+                    font-size: 20px;
+                }
+                @media (max-width: 768px) {
+                    font-size: 15px;
+                }
+                @media (max-width: 415px) {
+                    font-size: 28px;
+                }
+                @media (max-width: 376px) {
+                    font-size: 27px;
+                }
+            }
+            p {
+                font-size: 15px;
+                padding-bottom: 1.9rem;
+                @media (max-width: 1024px) {
+                    font-size: 11px;
+                }
+                @media (max-width: 768px) {
+                    font-size: 8px;
+                }
+                @media (max-width: 415px) {
+                    font-size: 18px;
+                }
+                @media (max-width: 376px) {
+                    font-size: 16px;
+                }
+            }
+            button {
+                padding: 15px 80px;
+                    border-radius: 28px;
+                    border: none;
+                    background-color: $primary-color;
+                    color: white;
+                    outline: none;
+                    cursor: pointer;
+                    @media (max-width: 1024px) {
+                        padding: 15px 73px;
+                    }
+                    @media (max-width: 768px) {
+                        padding:15px 26px;
+                    }
+                    @media (max-width: 415px) {
+                        padding: 15px 75px;
+                    }
+                    &:hover {
+                        background-color:#ff9bdb ;
+                    }
+            }
+        }
+        .home-image{
+            flex: 2;
+            padding-left: 5rem;
+            padding-bottom: 4rem;
+            @media (max-width: 1024px){
+                padding-bottom: 8rem;
+            }
+            @media (max-width: 415px) {
+                padding-bottom: 40px;
+                padding-left: 0rem;
+            }
+            img {
+                width: 95%;
+                @media (max-width: 415px) {
+                    width: 100%;
+                }
+            }
+           
+        }
+    }
+}
+

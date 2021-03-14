@@ -1,0 +1,208 @@
+.main {
+    width: 90%;
+    margin: auto;
+    padding-top: 5rem;
+    @include flex(column, center, center);
+    .benefit-1 {
+        box-shadow: 5px 5px 10px 5px #fafafa;
+        border-radius: 10px;
+        @include flex(row, space-around, center);
+        @media (max-width: 415px) {
+            @include flex(column, center, center);
+            text-align: center;
+        }
+        .ben-text {
+            flex: 1;
+            padding-left: 4rem;
+            @media (max-width: 415px) {
+                order: 2;
+                text-align: center;
+                padding: 0px;
+            }
+             h2 {
+                 font-size: 2rem;
+                 padding-bottom: 1rem;
+                 color: hsl(192, 100%, 9%);
+                 @media (max-width: 768px) {
+                    font-size: 1rem;
+                }
+                @media (max-width: 415px) {
+                    font-size: 24px;
+                    padding-top: 17px;
+                }
+             }
+            p {
+                color: $paragraph-color;
+                font-size: 24px;
+                line-height: 170%;
+                @media (max-width: 1440px) {
+                    font-size: 22px;
+                }
+                @media (max-width: 1024px) {
+                    font-size: 15px;
+                }
+                @media (max-width: 768px) {
+                    font-size: 11px;
+                }
+                @media (max-width: 415px) {
+                    font-size: 19px;
+                }
+                @media (max-width: 376px) {
+                    font-size: 18px;
+                }
+
+
+            }
+        }
+        .ben-img {
+            flex: 1;
+            padding: 20px 0px;
+            padding-right: 15px;
+            text-align: right;
+            @media (max-width: 415px) {
+                order: 1;
+                text-align: center;
+                padding: 0px;
+                padding-top: 15px;
+            }
+            img {
+                width: 70%;
+            }
+        }
+    }
+    .benefit-2{
+        box-shadow: 5px 5px 10px 5px #fafafa;
+        border-radius: 10px;
+        @include flex(row, space-around, center);
+        margin-top: 30px;
+        @media (max-width: 415px) {
+            @include flex(column, center, center);
+            text-align: center;
+        }
+
+        .ben-img2 {
+            flex: 1;
+            padding: 20px 0px;
+            padding-right: 15px;
+            text-align: center;
+            @media (max-width: 415px) {
+                text-align: center;
+                padding: 0px;
+                padding-top: 15px;
+            }
+            img {
+                width: 70%;
+            }
+        }
+        .ben-text2 {
+            flex: 1;
+            padding-left: 4rem;
+            @media (max-width: 415px) {
+                padding-left: 0rem;
+            }
+             h2 {
+                 font-size: 2rem;
+                 padding-bottom: 1rem;
+                 color: hsl(192, 100%, 9%);
+                 @media (max-width: 768px) {
+                    font-size: 1rem;
+                }
+                @media (max-width: 415px) {
+                    font-size: 24px;
+                    padding-top: 17px;
+                }
+              
+             }
+            p {
+                color: $paragraph-color;
+                font-size: 23px;
+                line-height: 170%;
+                @media (max-width: 1440px) {
+                    font-size: 22px;
+                }
+                @media (max-width: 1024px) {
+                    font-size: 15px;
+                }
+                @media (max-width: 768px) {
+                    font-size: 11px;
+                }
+                @media (max-width: 415px) {
+                    font-size: 20.5px;
+                }
+                @media (max-width: 376px) {
+                    font-size: 18.5px;
+                }
+
+            }
+        }
+        
+
+    }
+    .benefit-3 {
+        box-shadow: 5px 5px 10px 5px #fafafa;
+        border-radius: 10px;
+        @include flex(row, space-around, center);
+        margin-top: 30px;
+         @media (max-width: 415px) {
+             @include flex(column, center, center);
+             text-align: center;
+         }
+        .ben-text3 {
+            flex: 1;
+            padding-left: 4rem;
+            @media (max-width: 415px) {
+                order: 2;
+                text-align: center;
+                padding: 0px;
+            }
+             h2 {
+                 font-size: 2rem;
+                 padding-bottom: 1rem;
+                 color: hsl(192, 100%, 9%);
+                 @media (max-width: 768px) {
+                    font-size: 1rem;
+                }
+                @media (max-width: 415px) {
+                    font-size: 24px;
+                    padding-top: 17px;
+                }
+             }
+            p {
+                color: $paragraph-color;
+                font-size: 24px;
+                line-height: 170%;
+                @media (max-width: 1440px) {
+                    font-size: 23px;
+                }
+                @media (max-width: 1024px) {
+                    font-size: 15px;
+                }
+                @media (max-width: 768px) {
+                    font-size: 11px;
+                }
+                @media (max-width: 415px) {
+                    font-size: 21px;
+                }
+                @media (max-width: 376px) {
+                    font-size: 19px;
+                }
+
+            }
+        }
+        .ben-img3 {
+            flex: 1;
+            padding: 20px 0px;
+            padding-right: 15px;
+            text-align: right;
+            @media (max-width: 415px) {
+                order: 1;
+                text-align: center;
+                padding: 0px;
+            }
+            img {
+                width: 70%;
+            }
+        }
+
+    }
+}

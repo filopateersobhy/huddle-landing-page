@@ -1,0 +1,66 @@
+.community {
+    width: 50%;
+    margin: auto;
+    min-height: 30vh;
+    position: relative;
+    .com-text{
+        text-align: center;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        border-radius: 10px;
+        position: relative;
+        box-shadow: 1px 1px 1px 1px white;
+        top: 30%;
+        transform: translateY(18%);
+        z-index: 4;
+        @media (max-width: 1441px) {
+            transform: translateY(35%);
+        }
+        @media (max-width: 1024px) {
+            transform: translateY(84%);
+        }
+        @media (max-width: 768px) {
+            transform: translateY(32%);
+        }
+        @media (max-width: 415px) {
+            transform: translate(-12%, 17%);
+            width: 140%;
+        }
+        @media (max-width: 415px) {
+            transform: translate(-15%, 17%);
+            width: 151%;
+        }
+        background-color: white;
+        width: 100%;
+        h2 {
+            color: hsl(192, 100%, 9%);
+            padding-bottom: 2rem;
+            @media (max-width: 415px) {
+                transform: translateY(9%);
+                font-size: 15px;
+                width: 100%;
+            }
+        }
+        button {
+            padding: 15px 80px;
+                border-radius: 28px;
+                border: none;
+                background-color: $primary-color;
+                color: white;
+                outline: none;
+                cursor: pointer;
+                @media (max-width: 1024px) {
+                    padding: 15px 73px;
+                }
+                @media (max-width: 768px) {
+                    padding:15px 26px;
+                }
+                @media (max-width: 415px) {
+                    padding: 15px 75px;
+                }
+                &:hover {
+                    background-color:#ff9bdb ;
+                }
+        }
+    }
+}

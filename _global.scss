@@ -1,0 +1,26 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+$primary-color: hsl(322, 100%, 66%);
+$heading-color:  hsl(192, 100%, 9%);
+$paragraph-color: hsl(208, 11%, 55%);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+
+body {
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+h2 {
+    font-family: 'Poppins', sans-serif;
+    color:hsl(192, 100%, 9%);
+}
+@mixin flex($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;   
+}
+
