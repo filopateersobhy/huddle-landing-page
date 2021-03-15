@@ -1032,13 +1032,19 @@ footer .container3 .logos {
 
 @media (max-width: 415px) {
   footer .container3 .logos {
-    padding-left: 154px;
+    padding-left: 136px;
+  }
+}
+
+@media (max-width: 376px) {
+  footer .container3 .logos {
+    padding-left: 119px;
   }
 }
 
 @media (max-width: 415px) {
-  footer .container3 .logos {
-    padding-left: 140px;
+  footer .container3 .logos .media-logo {
+    margin-right: 15px;
   }
 }
 
@@ -1051,9 +1057,30 @@ footer .copy {
   text-align: right;
 }
 
+@media (max-width: 415px) {
+  footer .copy {
+    text-align: center;
+    font-size: 13px;
+  }
+}
+
+@media (max-widdth: 376px) {
+  footer .copy {
+    text-align: center;
+    font-size: 13px;
+  }
+}
+
 footer .attribution {
   text-align: center;
   padding: 0px;
   margin: 0px;
+}
+
+@media (max-width: 415px) {
+  footer .attribution {
+    text-align: center;
+    font-size: 13px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
